@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/co_layout">
+    <GridLayout
+        android:rowCount="5"
+        android:columnCount="1"
+        android:id="@+id/relative_layout_co"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linear_layout_co">
+    </GridLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_layout_co"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+
+        android:text="Submit"
+        android:onClick="bt_submit"
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:textSize="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:id="@+id/tv_question_done"
+        android:text="0 out of 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+</RelativeLayout>
